@@ -92,7 +92,7 @@ header{
 }
 
 .nav-bar a:hover,
-.nav-bar .home-active{
+.nav-bar .categories-active{
     background: var(--green-color);
     border-radius: 5rem;
     color: var(--bg-color);
@@ -263,4 +263,26 @@ header{
 .categories-container .box span{
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+.categories .box .bx{
+    padding:10px;
+    background-color: var(--green-color);
+    color: var(--bg-color);
+    border-radius: 20px;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: -8%;
+    display: none;
+}
+
+.categories .box .bx:hover{
+    background-color: var(--light-orange-color);
+    transition: 0.2s all linear;
+}
+
+.categories .box:hover .bx{
+    display: block;
+    transition: 0.2s all linear;
+
 }
