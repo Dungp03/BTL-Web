@@ -70,7 +70,6 @@ header{
     display: flex;
     margin-left: 50px;
     align-items: center;
-    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-color);
     column-gap: 0.5rem;
@@ -96,7 +95,7 @@ header{
 }
 
 .nav-bar a:hover,
-.nav-bar .product-active{
+.nav-bar .contact-acitve{
     background: var(--green-color);
     border-radius: 5rem;
     color: var(--bg-color);
@@ -179,37 +178,6 @@ header{
     transition: 0.2s ease;
 }
 
-.swiper-button-next{
-    background: url(/image/right-arrow.png);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center;
-    margin-right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.swiper-button-next::after{
-    display: none;
-     
-}
-
-.swiper-button-prev{
-    background: url(/image/left-arrow.png);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center;
-    margin-right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.swiper-button-prev::after{
-    display: none;
-     
-}
 
 .heading{
     display: flex;
@@ -226,109 +194,59 @@ header{
     color: var(--green-color);
 }
 
-
-.products{
-    margin-top: 30px;
+.contact{
+    display: flex;
     max-width: 1000px;
-    margin-left: auto;
+    margin-left: auto;  
     margin-right: auto;
-
-}
-
-.products-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
-    gap: 1rem;
-    margin-top:2rem;
+    grid-template-columns: repeat(autofit,minmax(21rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    line-height: 2rem;
+    margin-top: 3rem;
+    
 }
 
-.products-container .box{
-    padding: 20px;
-    box-shadow: 1px 2px 11px 4px rgb(14 55 54/15%);
-    border-radius: 0.5rem;
-    position: relative;
+.contact-text{
+    text-align: center;
 }
+.contact-text span{
 
-.products-container .box img{
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    object-position: center;
-}
-
-.products-container .box span{
-    font-weight: 500;
-    font-size: 13px;
-}
-
-.products-container .box h2>a{
-    font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-color);
+    text-transform: uppercase;
+    color: var(--green-color);
 }
 
-
-
-
-.products-container .box .price{
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top:0.5rem;
-    color: var(--light-orange-color);
-}
-
-.products-container .box .price span{
-    color: var(--text-color);
-}
-
-.products-container .box .cart-btn .bx-cart-alt{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 10px;
-    background: var(--green-color);
-    font-size: 24px;
-    border-radius: 0.5rem 0 0.5rem 0;
-    color: var(--bg-color);
-    cursor: pointer;
-}
-
-.products-container .box .cart-btn .bx-cart-alt:hover{
-    background: var(--light-orange-color);
-    transition: 0.2s all linear;
-}
-
-.products-container .box .bx-heart{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 20px;
-    background-color: transparent;
-    color: var(--light-orange-color);
-    cursor: pointer;  
-}
-
-.products-container .box .bxs-heart{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 20px;
-    color: var(--light-orange-color);
-    cursor: pointer; 
-    display: none; 
-}
-
-.bx-heart.clicked{
-    color: var(--light-orange-color);
-}
-.products-container .box .discount{
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    font-size: 20px;
-    color: var(--bg-color);
+.contact img{
+    width: 350px;
+    height: 350px;
+    margin-left: 20rem;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
     background: var(--orange-color);
-    padding: 4px 18px 4px 4px;
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+.contact-text .bxl-facebook-circle,.bxl-github,.bxs-phone,.bxs-map{
+    font-size: 30px;
+    padding-right: 0.5rem;
+}
+.contact-text p{
+    margin: 0.5rem 0 0.1rem;
+    font-weight: 500;
 
 }
+.contact-text p a{
+    margin: 0.5rem 0 0.1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.contact-text .btn{
+    text-align: center;
+    justify-content: center;
+    margin-left: 26.5rem;
+    margin-top: 1rem;
+}
+
+
