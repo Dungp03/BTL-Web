@@ -554,7 +554,7 @@ header {
 
 .products-container .box .add-cart {
     position: absolute;
-    right: 0;
+    right: -100;
     bottom: 0;
     padding: 10px;
     background: var(--green-color);
